@@ -357,7 +357,7 @@
                 "services=", { "Ref": "Services" }, "\n",
                 "stackName=", { "Ref": "AWS::StackName" }, "\n",
                 "serverVersion=", { "Ref": "ServerVersion" }, "\n",
-                "baseURL=https://raw.githubusercontent.com/Belio/ISGreplicationDemo/main/cloud/\n",
+                "baseURL=https://raw.githubusercontent.com/Belio/SyncGWDemo/main/cloud/\n",
                 "wget ${baseURL}server-plus.sh\n",
                 "wget ${baseURL}utilAmzLnx2.sh\n",
                 "chmod +x *.sh\n",  
@@ -403,7 +403,7 @@
                 "echo 'Running startup script...'\n",
                 "stackName=", { "Ref": "AWS::StackName" }, "\n",
                 "syncGatewayVersion=", { "Ref": "SyncGatewayVersion" }, "\n",
-                "baseURL=https://raw.githubusercontent.com/Belio/ISGreplicationDemo/main/cloud/\n", "wget ${baseURL}syncGateway.sh\n",
+                "baseURL=https://raw.githubusercontent.com/Belio/SyncGWDemo/main/cloud/\n", "wget ${baseURL}syncGateway.sh\n",
                 "chmod +x *.sh\n",
                 "./syncGateway.sh ${stackName} ${syncGatewayVersion}\n"
               ]
